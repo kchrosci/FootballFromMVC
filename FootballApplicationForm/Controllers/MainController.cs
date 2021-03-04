@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FootballApplicationForm.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -14,6 +15,16 @@ namespace FootballApplicationForm.Controllers
 			string time = DateTime.Now.ToString();
 			ViewBag.Time = time;
 			return View();
+		}
+		[HttpGet]
+		public ViewResult RegisterPlayer()
+		{
+			return View();
+		}
+		[HttpPost]
+		public ViewResult RegisterPlayer(PlayerInfo playerInfo)
+		{
+			return View("Thank you for register!",playerInfo);
 		}
 	}
 }
