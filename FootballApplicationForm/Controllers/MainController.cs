@@ -24,7 +24,14 @@ namespace FootballApplicationForm.Controllers
 		[HttpPost]
 		public ViewResult RegisterPlayer(PlayerInfo playerInfo)
 		{
-			return View("Thank you for register!",playerInfo);
+			if (ModelState.IsValid)
+			{
+				return View("Thanks", playerInfo);
+			}
+			else
+			{
+				return View();
+			}
 		}
 	}
 }

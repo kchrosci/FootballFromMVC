@@ -17,6 +17,7 @@
 		Fill all the gaps to successfully register!
 		@using (Html.BeginForm())
 		{
+			@Html.ValidationSummary()
 			<p>Name: @Html.TextBoxFor(x => x.Name) </p>
 			<p>Surname: @Html.TextBoxFor(x => x.Surname) </p>
 			<p>Telephone: @Html.TextBoxFor(x => x.Phone) </p>

@@ -1,0 +1,27 @@
+﻿@model FootballApplicationForm.Models.PlayerInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+	<title>Thank you for register!</title>
+</head>
+<body>
+	<div>
+		<h1>Dear @Model.Name.</h1>
+		@if (Model.CurrentlyPlaying == true)
+		{
+			@:Your register was NOT successful! Already in team!
+		}
+		else
+		{
+			@:Your register was successful!
+		}
+	</div>
+</body>
+</html>

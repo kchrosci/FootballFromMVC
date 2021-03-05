@@ -105,6 +105,7 @@
     <None Include="packages.config" />
     <Content Include="Views\Main\Index.cshtml" />
     <Content Include="Views\Main\RegisterPlayer.cshtml" />
+    <Content Include="Views\Main\Thanks.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
