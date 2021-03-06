@@ -12,8 +12,9 @@ namespace FootballApplicationForm.Models
 		public string Name { get; set; }
 		[Required(ErrorMessage = "Please insert your surname.")]
 		public string Surname { get; set; }
+		[Required(ErrorMessage = "Please insert your e-mail address..")]
 		[RegularExpression(".+\\@.+\\..+",
-				ErrorMessage = "Please insert your e-mail address.")]
+				ErrorMessage = "Please insert appropriate e-mail address.")]
 		public string Email { get; set; }
 		[Required(ErrorMessage = "Please insert your phone number.")]
 		public string Phone { get; set; }
